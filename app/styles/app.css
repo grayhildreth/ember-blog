@@ -1,0 +1,21 @@
+img {
+  height: 200px;
+  width: auto;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: black;
+  color: hotpink;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+li {
+  padding-top: 4%;
+  color: white;
+}
