@@ -1,12 +1,13 @@
-<h1> Welcome to Party Central </h1>
+<h1> Upcoming Live Muzaks </h1>
 
-We hope you find exactly what you're looking for in a live music experience.
+{{new-event saveEvent2="saveEvent3"}}
 
 <ul>
   {{#each model as |event|}}
-    {{event-tile event=event destroyEvent="destroyEvent"}}
+    {{event-tile event=event update="update" destroyEvent="destroyEvent"}}
   {{/each}}
 </ul>
+
 
 <!-- <ul >
   {{#each model as |event|}}
