@@ -2,14 +2,20 @@
 
 We hope you find exactly what you're looking for in a live music experience.
 
-<ul >
+<ul>
+  {{#each model as |event|}}
+    {{event-tile event=event destroyEvent="destroyEvent"}}
+  {{/each}}
+</ul>
+
+<!-- <ul >
   {{#each model as |event|}}
     <li> {{event.date}}.......{{event.band}}.......{{event.venue}} in {{event.city}}
       <br>
       <img src="{{event.image}}" alt="band pic">
     </li>
     {{/each}}
-</ul>
+</ul> -->
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
